@@ -6,4 +6,4 @@ ano_atual = datetime.datetime.now().year
 salario_inicial = float(input("Digite o salário inicial do funcionário: R$"))
 ano_contratacao = int(input("Digite o ano de contratação do funcionário: "))
 
-#ver se salário inicial atende ao critério mínimo
+#ver se salário inicial atende ao critério mínimo.
