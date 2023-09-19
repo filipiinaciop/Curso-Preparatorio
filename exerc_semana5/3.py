@@ -5,6 +5,7 @@ while True:
     if n < 0:
         break
 
+# %(resto da divisão) diferente de 0
     if n % 2 != 0:
         soma += n
 
