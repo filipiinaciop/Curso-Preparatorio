@@ -1,25 +1,39 @@
 import random
 
+# Função para jogar o jogo de adivinhação
 def jogo(nivel):
-    if nivel == 'FÁCIL' :
-       limite = 10
+    if nivel == 'FÁCIL':
+        limite = 10
     elif nivel == 'MÉDIO':
-       limite = 50
+        limite = 50
     elif nivel == 'DIFÍCIL':
-       limite = 100
+        limite = 100
     else:
-       print('Nivel inválido. ')
-       return
-    
+        print('Nível inválido.')
+        return
+
     n = random.randint(1, limite)
+
+    print(f'Bem-vindo ao jogo de adivinhação ({nivel})!')
+    print(f'Eu escolhi um número entre 1 e {limite}. Tente adivinhar.')
+
+    tentativas = 0
+
+    #while True para fazer algo indeterminadas vezes
     while True:
-        valor = int(input('Digite um valor até o número correto: '))
-        x += 1
-        if valor == n:
-            print('Parabéns voce acertou!')
-            print(f'Foram {x} tentativas até o acerto!')
+        tentativa = int(input('Tentativa: '))
+
+        if tentativa == n:
+            print(f'Parabéns! Você acertou o número {n} em {tentativas + 1} tentativas.')
             break
-        elif valor < n:
-            print('Um pouco mais!')
+        elif tentativa < n:
+            print('O número é maior.')
         else:
-         print('Um pouco menos!')
+            print('O número é menor.')
+        
+        tentativas += 1
+
+# Programa principal
+print('Escolha o nível de dificuldade: FÁCIL, MÉDIO ou DIFÍCIL.')
+nivel = input('Digite o nível: ').upper()
+jogo(nivel)
