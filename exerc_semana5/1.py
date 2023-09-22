@@ -3,6 +3,7 @@ import datetime
 salario_inicial = float(input('Digite o salário inicial do funcionário: $'))
 ano = int(input('Digite o ano de contratação do funcionário: '))
 
+#percentual aumento
 pa = 0.015 
 
 hoje = datetime.datetime.now().year #date 2023
