@@ -72,3 +72,4 @@ while True:
     else:
         print('')
         
+#nao consegui fazer uma parte do aprovado e desaprovado
