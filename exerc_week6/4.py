@@ -1,5 +1,5 @@
 while True:
-    aplicacao = float(input('Digite o valoe da aplicacao: R$'))
+    aplicacao = float(input('Digite o valor da aplicacao: R$'))
 
     if aplicacao < 0:
         break
