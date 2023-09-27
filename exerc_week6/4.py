@@ -12,5 +12,16 @@ while True:
     else:
         taxa = 0.015
 
-    resgate = aplicacao * (1 + taxa) ** n_meses
+    temp = 0
+    a1 = 2000
+    a2 = 10000
+    if temp < n_meses:
+        resgate = aplicacao * (1 + taxa) ** n_meses
+
+    if resgate >= a1 and resgate < a2:
+            taxa == 0.01
+    elif resgate >= a2:
+            taxa = 0.015
+    temp += 1
+    
     print(f'O valor do resgate após {n_meses} meses será de R${resgate: .2f}')
