@@ -4,6 +4,7 @@ i_51_75 = 0
 i_76_100 = 0
 
 while True:
+    print('\033[33mBem vindo! faça o seguinte:\nDigite números e depois veja quantos números voce digitou esta em 4 tipos de intervalo!\033[0m')
     n = int(input('Digite um número positivo (ou negativo para finalizar):'))
     if n < 0:
         break #para sair
