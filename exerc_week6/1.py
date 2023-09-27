@@ -68,7 +68,7 @@ while True:
             reprovado += 1
         print(f'A média final do aluno {nome} foi {media:.1f}')
         print(f'A turma teve:\nAprovados: {aprovado}\nReprovados: {reprovado}')
-        cont
+        continue
     else:
         print('')
         
