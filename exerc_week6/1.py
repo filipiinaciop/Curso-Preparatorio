@@ -32,9 +32,9 @@ while aluno_atual <= alunos:
        reprovados += 1
 
     if media > MM:
-        MM = media
-        aluno_MM = nome
-    if media > mm:
+       MM = media
+       aluno_MM = nome
+    if media < mm:
        mm = media
        aluno_mm = nome
     
