@@ -1,7 +1,7 @@
 import random
 print()
-print('Bem-vindo/a ao jogo de azar!')
-print('*REGRAS*\n[1] - Saldo inical 100.00\n[2] - Nâo é possivel apostar amais que o saldo atual\n[3] - Em caso de perda somente 20.00 pontos serão retirados')
+print('Bem-vindo/a ao jogo')
+print('REGRAS\n[1] - Saldo inical 100.00\n[2] - Nâo é possivel apostar amais que o saldo atual\n[3] - Em caso de perda somente 20.00 pontos serão retirados')
 print()
 ganhas = 0
 percas = 0
