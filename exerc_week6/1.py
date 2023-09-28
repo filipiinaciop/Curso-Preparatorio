@@ -2,7 +2,7 @@ aprovados = 0
 reprovados = 0
 soma = 0
 MM = float('-inf')  #valor negativo
-mm = float('inf')  #...
+mm = float('inf')  #....
 
 alunos = int(input('Quantos alunos há na turma?\n'))
 aluno_atual = 1
