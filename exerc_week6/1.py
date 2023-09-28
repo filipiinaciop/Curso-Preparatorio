@@ -43,6 +43,7 @@ while aluno_atual <= alunos:
     editar = input('Deseja editar a nota deste aluno? (S/N): ').strip().lower()
     if editar == 's':
         continue #retorna ao inicio do loop para reeditar a nota do msm aluno
+    
     aluno_atual += 1
 
 porcem_aprov = (aprovados / alunos) * 100
