@@ -1,6 +1,6 @@
-imovel = float(input('Valor do imóvel: '))
-i = float(input('Investimento mensal: '))
-taxa_mensal = float(input('Taxa de juros mensal (em porcentagem): '))
+imovel = float(input('Valor do imóvel: R$'))
+i = float(input('Investimento mensal: R$'))
+taxa_mensal = float(input('Taxa de juros mensal: %'))
 
 if i < 0.01 * imovel:
     print('O investimento mensal não é viável para comprar o imóvel.')
@@ -14,5 +14,4 @@ else:
         m += 1
         if saldo >= imovel:
             break
-    print(f'Tempo necessário para comprar o imóvel é de {m} meses.')
-
+    print(f'Você precisará de {m} meses para comprar o imóvel.')
