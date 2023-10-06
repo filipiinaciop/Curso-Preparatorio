@@ -9,25 +9,25 @@ jovem = 0
 adult = 0
 idoso = 0
 
-for c in range(1, 81):
+for c in range(1, 9):
     idade = int(input('Digite a idade: '))
 
     if idade <= 2:
         bebe += 1
 
-    elif idade > 2 and idade <= 10:
+    elif idade <= 10:
         crianca += 1
 
-    elif idade > 10 and idade <= 14:
+    elif idade <= 14:
         pre += 1
 
-    elif idade > 14 and idade < 18:
+    elif idade < 18:
         adoles += 1 
 
-    elif idade >= 18 and idade < 21:
+    elif idade < 21:
         jovem += 1 
 
-    elif idade >= 21 and idade < 60:
+    elif idade < 60:
         adult += 1
 
     elif idade >= 60:
@@ -39,7 +39,7 @@ for c in range(1, 81):
         menor = idade
 
 x += idade
-media = x / 80
+media = x / 8
 
 print()
 print(f'Bebes: {bebe}\nCrianças: {crianca}\nPré-adolecentes: {pre}\nAdolecentes: {adoles}\nJovens: {jovem}\nAdultos: {adult}\nIdosos: {idoso}')
