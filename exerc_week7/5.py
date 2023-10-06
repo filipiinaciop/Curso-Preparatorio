@@ -6,8 +6,8 @@ def tempo(min, segs):
     for c in range(ts, -1, -1):
         min_rest = c // 60
         segs_rest = c % 60
-        if c == 10:
-            print(f'\033[91m{min_rest:02d}:{segs_rest:02d}\033[91m')
+        if c <= 10:
+            print(f'\033[91m{min_rest:02d}:{segs_rest:02d}\033[0m')
         else:
             print(f'{min_rest:02d}:{segs_rest:02d} ')
         sleep(1)
@@ -25,4 +25,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-print('\033[0mFIM\033[0m')
+print('FIM')
