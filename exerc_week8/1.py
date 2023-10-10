@@ -27,7 +27,6 @@ def menu(produtos, precos):
     print("\033[33;1mPRODUTOS..............PREÇOS\033[0m")
     for i, produto in enumerate(produtos):
         print(f"\033[1m{i + 1}. {produto}\033[0m - \033[32mR${precos[i]:.2f}\033[0m")
-    print("0. Sair")
 
 def p_mais_caro_barato(produtos, precos):
     caro_index = precos.index(max(precos))
@@ -37,18 +36,7 @@ def p_mais_caro_barato(produtos, precos):
 def spip(precos):
     soma = sum(precos[::2])
     return soma
-
-while True:
-    menu(produtos, precos)
-    escolha = int(input("Escolha um produto (0 para sair): "))
-    
-    if escolha == 0:
-        break
-    elif escolha > 0 and escolha <= len(produtos):
-        produto_index = escolha - 1
-        print(f"Você escolheu: {produtos[produto_index]} - R${precos[produto_index]:.2f}")
-    else:
-        print("Escolha inválida. Tente novamente.")
+menu(produtos, precos)
 
 produto_mais_caro, preco_mais_caro, produto_mais_barato, preco_mais_barato = p_mais_caro_barato(produtos, precos)
 print(f"Produto mais caro: {produto_mais_caro} - R${preco_mais_caro:.2f}")
