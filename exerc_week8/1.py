@@ -24,7 +24,7 @@ precos = (
 
 def menu(produtos, precos):
     print("\033[33;1mBem-vindo à loja Swift!\033[0m")
-    print("\033[33;1mMenu de Produtos:\033[0m")
+    print("\033[33;1mPRODUTOS..............PREÇOS\033[0m")
     for i, produto in enumerate(produtos):
         print(f"\033[1m{i + 1}. {produto}\033[0m - \033[32mR${precos[i]:.2f}\033[0m")
     print("0. Sair")
