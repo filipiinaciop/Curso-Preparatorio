@@ -7,12 +7,12 @@ num_jbs = len(jbs)
 print(f"Número de marcas no conjunto J&F: {num_jef}")
 print(f"Número de marcas no conjunto JBS: {num_jbs}")
 
-# Interseção dos dois conjuntos
+# Interseção dos dois conjuntos (jef, jbs)
 intersecao = jef.intersection(jbs)
 print("\nMarcas em comum nos dois conjuntos:")
 print(intersecao)
 
-# difference para mostrar a diferenca dos dois
+# difference para mostrar a diferenca dos dois...
 diferentes_em_jef = jef.difference(jbs)
 diferentes_em_jbs = jbs.difference(jef)
 
