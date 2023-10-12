@@ -1,12 +1,11 @@
 import random
-
 def itens_repetidos(tupla):
     for item in tupla:
         if tupla.count(item) > 1:
             return True
     return False
 
-def pesquisar_e_contar_valor(tupla, valor):
+def contar_valor(tupla, valor):
     if valor in tupla:
         return tupla.count(valor)
     else:
@@ -29,7 +28,7 @@ while True:
     valor_pesquisa = input("Digite um valor para pesquisar na tupla: ")
     try:
         valor_pesquisa = int(valor_pesquisa)
-        ocorrencias = pesquisar_e_contar_valor(tupla_aleatoria, valor_pesquisa)
+        ocorrencias = contar_valor(tupla_aleatoria, valor_pesquisa)
         if ocorrencias > 0:
             print(f"O valor {valor_pesquisa} foi encontrado na tupla e ocorre {ocorrencias} vez(es).")
         else:
