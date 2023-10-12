@@ -4,8 +4,8 @@ def retençao(assinantes,cancelamentos,acessos_canal_rural):
     for x in range(6):
         retençao = (assinantes[0+z] - cancelamentos[0+z]) / assinantes[0+z] * 100
         print(f'\033[1mA retenção de assinantes no mês {m} foi de {retençao:.2f}%') #comum
-        retençao2 = (acessos_canal_rural[0+z] - cancelamentos[0+z]) / acessos_canal_rural[0+z] * 100
-        print(f'A rentenção de Acessos no Canal Rural no mês {m} foi de {retençao2:.2f}%\033[0m')
+        r2 = (acessos_canal_rural[0+z] - cancelamentos[0+z]) / acessos_canal_rural[0+z] * 100
+        print(f'A rentenção de Acessos no Canal Rural no mês {m} foi de {r2:.2f}%\033[0m')
         print()
         m += 1
         z += 1
