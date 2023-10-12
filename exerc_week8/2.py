@@ -1,23 +1,28 @@
 # INCOMPLETO 
 
-es1 = int(input('Digite a quantidade do estoque de Camisas: '))
-ps1 = float(input('Digite o preço de cada Camisa: R$'))
-es2 = int(input('Digite a quantidade do estoque de Calças Jeans: '))
-ps2 = float(input('Digite o preço de cada Calça: R$'))
-es3 = int(input('Digite a quantidade do estoque de Tênis: '))
-ps3 = float(input('Digite o preço de cada Tênis: R$'))
+def att(estoque2,pedidos,media):
+    media = int(input('Digite o valor minímo do estoque: '))
 
-estoque1 = {
-    ("Camiseta", ps1, es1),
-    ("Calça Jeans", ps2, es2),
-    ("Tênis", ps3, es3)
+es1 = int(input('Digite a quantidade do estoque de (Camisas): '))
+pc1 = float(input('Digite o preço de cada Camisa: $'))
+es2 = int(input('Digite a quantidade do estoque de (Calças Jeans): '))
+pc2 = float(input('Digite o preço de cada Calça: $'))
+es3 = int(input('Digite a quantidade do estoque de (Tênis): '))
+pc3 = float(input('Digite o preço de cada Tênis: $'))
+
+e1 = {
+    ("Camiseta", pc1, es1),
+    ("Calça Jeans", pc2, es2),
+    ("Tênis", pc3, es3)
     }
-estoque2 = (
-    ("Camiseta", ps1, es1),
-    ("Calça Jeans", ps2, es2),
-    ("Tênis", ps3,  es3),
+e2 = (
+    ("Camiseta", pc1, es1),
+    ("Calça Jeans", pc2, es2),
+    ("Tênis", pc3,  es3),
 )
-print('Seu estoque atual é ',estoque1)
+
+
+print('Seu estoque atual é ',e1)
 
 p = 1
 for x in range(9999):
@@ -33,3 +38,4 @@ for x in range(9999):
             ("Tênis", p2),
             ("Calça Jeans", p3)
             )
+            att (e2,pedidos, 0)
