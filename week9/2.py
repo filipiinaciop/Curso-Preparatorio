@@ -1,5 +1,5 @@
-s = "Aprovado"
-no = "Reprovado"
+s = 'Aprovado'
+no = 'Reprovado'
 boletim = []
 c1 = int(input('Digite a quantidade de alunos na sala: ')) 
 c2 = 0 #Contagem para num de aluno
