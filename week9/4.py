@@ -1,5 +1,12 @@
-carros = ['CAMARO', 'CRETA', 'UNO', 'CIVIC', 'ONIX']
-consu = [7, 10, 12.5, 9, 14.5]
+carros = []
+consu = []
+num_carros = int(input("Quantos carros deseja comparar? "))
+
+for i in range(num_carros):
+    nome_carro = input(f"Digite o nome do carro {i+1}: ")
+    consumo = float(input(f"Digite o consumo do {nome_carro} (km por litro): "))
+    carros.append(nome_carro)
+    consu.append(consumo)
 
 preco_combustivel = 2.25 #gasosa
 
