@@ -18,7 +18,7 @@ def filtrar_clientes():
 
 idade_min = 25
 idade_max = 35
-localizacao = 'Sao paulo'.lower
+localizacao = 'Sao paulo'
 valor_min_compras = 1000
 clientes_filtrados = filtrar_clientes()
 
