@@ -1,4 +1,5 @@
-conts = [0] * 9
+conts = [0] * 9 # *9 pois cria 9 casas, e todos inicializados como 0.
+#por isso amo Guanabara heheh
 salarios = [470, 320, 420, 590, 680, 750, 860, 920, 1050]
 
 for s in salarios:
