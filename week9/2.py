@@ -21,7 +21,7 @@ for c in range(c1):
         #print(f'{c1,c3}')
         if c1 != c3:
            continue 
-print('\033[1mN:    Alunos:    Nota1:    Nota2:    Média:    Conceito\033[0m')
+print('\033[1mN:    Alunos:  Nota1:    Nota2:   Média:       Conceito\033[0m')
 for i,a in enumerate(boletim, start=1):
     a = f'{i}     {a}'
     print(a)
