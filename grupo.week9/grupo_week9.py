@@ -1,3 +1,5 @@
+# Ana Clara  Wolf / Carolina Mendes / Filipi Inacio / Marina Peixoto
+
 import random
 codigo = []
 def entrada():
