@@ -9,12 +9,15 @@ conta = {
     'media': 0
 }
 
-print(f'Saldo atual = {conta["saldo"]}')
+print(f'Saldo atual = \033[32m{conta["saldo"]}\033[0m')
 while True:
     vc = float(input('Digite o valor da compra (ou negativo para encerrar):\n'))
     if vc <= 0:
         break
     compra(conta, vc)
-    print(f'Transações: {conta["transações"]}\nSaldo: {conta["saldo"]}\nMédia: {conta["media"]:.1f}')
+    if conta['saldo'] > 0:
+        print(f'Transações: {conta["transações"]}\nSaldo: \033[32m{conta["saldo"]}\033[0m\nMédia: {conta["media"]:.1f}')
+    else:
+            print(f'Transações: {conta["transações"]}\nSaldo: \033[31m{conta["saldo"]:.1f}\033[0m\nMédia: {conta["media"]:.1f}')
 
 print()
