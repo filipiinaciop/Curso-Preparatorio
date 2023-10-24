@@ -2,13 +2,16 @@
 
 import random
 codigo = []
+autor = []
+titulo = []
 def entrada():
     for i in range(999):
-        titulo = input('Qual é o nome do livro? ')
-        autor = input('Qual é o autor do livro desejado? ')
+        tit = input('Qual é o nome do livro? ')
+        aut = input('Qual é o autor do livro desejado? ')
         cod = random.randint(1000, 9999)
         # cod = titulo, autor
-        codigo.append(titulo)
+        titulo.append(tit)
+        autor.append(aut)
         codigo.append(cod)
         print(codigo)
         break
@@ -20,7 +23,7 @@ def entrada():
 def remover_livro():
     remover = int(input('Digite o codigo do livro que deseja remover: '))
     codigo.remove(remover)
-    print(f'{codigo}')
+    print(codigo)
 
 # def ordem_cadastro():
 #     ordem = codigo.list()
@@ -32,7 +35,7 @@ def remover_livro():
 #     alfabetica_titulo = codigo.sort(titulo)
 
 op = 0
-while op != 6:
+while op != 7:
     print('''[ 1 ] Adicionar livro
     [ 2 ] Mostrar os livros por ordem de cadastro.
     [ 3 ] Mostrar os livros por ordem alfabética por titulo.
