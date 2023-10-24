@@ -19,5 +19,4 @@ while True:
         print(f'Transações: {conta["transações"]}\nSaldo: \033[32m{conta["saldo"]}\033[0m\nMédia: {conta["media"]:.1f}')
     else:
             print(f'Transações: {conta["transações"]}\nSaldo: \033[31m{conta["saldo"]:.1f}\033[0m\nMédia: {conta["media"]:.1f}')
-
 print()
