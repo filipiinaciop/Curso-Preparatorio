@@ -19,3 +19,12 @@ for c in range(0, 5):
     n = int(int(input('Digite um valor:')))
     s += n
 print(f'A soma dos valores foi {s}')
+
+# FORMULA
+# for elemento in sequência:
+#     # Corpo do laço
+#     # Você pode realizar operações com o elemento atual aqui
+# for número in range(5):
+#     print(número)
+# range(início, fim, passo)
+
