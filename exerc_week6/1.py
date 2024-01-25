@@ -30,10 +30,10 @@ while True:
          n2 = float(input('Digite a segunda nota: '))
          n3 = float(input('Digite a terceira nota: ')) 
          if n1 < 0 or n2 < 0 or n3 < 0:
-            print('Soménte são aceitos valores de## (0.00 a 10.0)')
+            print('Somente são aceitos valores de (0.00 a 10.0)')
             sys.exit()   #COMO NAO É POSSIVEL BREAK USAMOS EXIT QUE FECHA TUDO  
          elif n1 > 10 or n2 > 10 or 3 > 10:
-            print('Soménte são aceitos valores de (0.00 a 10.0)')
+            print('Somente são aceitos valores de (0.00 a 10.0)')
             sys.exit()
          media = n1 * 20/100 + n2 * 30/100 + n3 * 50/100
          print(f'Média do aluno {nome}: {media: .2f}')
